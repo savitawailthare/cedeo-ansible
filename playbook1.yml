@@ -1,6 +1,7 @@
  ---
+    - name: my playbook
     - hosts: all
-       tasks:
+      tasks:
         - name: ping my hosts
            ansible.builtin.ping:
         - name: print message
