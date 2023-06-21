@@ -1,11 +1,11 @@
- - name: Play Web - Create apache directories and username in web servers
-    hosts: all
+ ---
+    - hosts: all
        tasks:
-      - name: ping my hosts
-        ansible.builtin.ping:
-      - name: print message
-        ansible.builtin.debug:
-         msg:hello world ansibel
+        - name: ping my hosts
+           ansible.builtin.ping:
+        - name: print message
+           ansible.builtin.debug:
+            msg:hello world ansibel
           
           
          
