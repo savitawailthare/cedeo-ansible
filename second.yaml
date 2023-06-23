@@ -1,7 +1,9 @@
 - name: Change file ownership, group and permissions
   hosts: all
-  ansible.builtin.file:
-    path: /ec2-user/home/myfile1.txt
-    state: touch
-    mode: '0644'
+ tasks:
+   - name: name my file
+     ansible.builtin.file:
+     path: /ec2-user/home/myfile1.txt
+     state: touch
+     mode: '0644'
    
